@@ -16,7 +16,7 @@ root = Tk()
 
 root.title('中文假名注音程序')
 
-Label(root, text='将需要注音的内容逐行写入txt，在下面输入txt文件名\n将会在工作目录下生成文件名为原文件名+日期时间的注音txt文件\n请使用UTF-8编码\n').grid(row=0, column=0)
+Label(root, text='将需要注音的内容逐行写入txt，在下面输入txt文件名\n将会在工作目录下output文件夹内生成文件名为原文件名+日期时间的注音txt文件\n请使用UTF-8编码\n').grid(row=0, column=0)
 
 v2 = StringVar()
 
@@ -33,7 +33,7 @@ def convert():
     name,suf = os.path.splitext(os.path.basename(fn))
 
     tstamp = time.strftime("%y%m%d-%H%M", time.localtime())
-    of_path = os.path.join(os.getcwd(),name + tstamp + suf)
+    of_path = os.path.join(os.getcwd(),"output/",name + tstamp + suf)
     print(of_path)
     res = []
     with open(fn,encoding="utf-8") as ifp:
