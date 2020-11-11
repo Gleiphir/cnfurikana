@@ -1,5 +1,7 @@
 # CNfurikana
 
+Auto mark Chinese pronunciation by marking furikana on characters.
+
 轻量级的用假名标注中文音调与读音的软件。
 
 基于pypinyin以及jieba等库。
@@ -8,11 +10,18 @@
 
 同时也是日语母语者学习中文的助力。
 
-Auto mark Chinese pronunciation by marking furikana on characters.
-
 
 # Release
 ## Latest
+
+## 1.2.0
+使用制表符，在大多数情况下解决了可能存在的对齐问题。
+增加了实时短句翻译功能。与原本的文档翻译整合在一起。
+整理了UI界面。
+现在主程序名为CNfurikana了
+https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.2.0.zip
+
+## Legacy
 ### 1.1.0
 基于Tkinter的UI现在可以选择原始文件而非输入路径了。
 换用全角空格，大幅优化了对齐问题。
@@ -20,7 +29,7 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 
 https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.1.0.zip
 
-## Legacy
+
 ### 1.0.0
 基于Tkinter的轻量级UI，用于文本处理。
 
