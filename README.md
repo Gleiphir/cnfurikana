@@ -31,3 +31,6 @@ https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.0.0.zip
 pypinyin>=0.39.1
 jieba>=0.42.1
 python>=3.8.0
+
+# License
+MIT License
