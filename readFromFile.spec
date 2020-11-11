@@ -3,14 +3,14 @@
 block_cipher = None
 
 
-a = Analysis(['readFromFile.py'],
+a = Analysis(['readFromFile.py', 'realtimeConvert.py'],
              pathex=['D:\\Github\\cnfurikana'],
              binaries=[],
              datas=[],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
-             excludes=['pyqt'],
+             excludes=['pyqt5'],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
              cipher=block_cipher,

@@ -70,7 +70,8 @@ symb_split = [
     ' ',
     '~',
     '|',
-    '-'
+    '-',
+    '\t'
 ]
 
 @dataclass
