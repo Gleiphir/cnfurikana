@@ -8,9 +8,20 @@
 
 同时也是日语母语者学习中文的助力。
 
-# Release
+Auto mark Chinese pronunciation by marking furikana on characters.
 
-## 1.0.0
+
+# Release
+## Latest
+### 1.1.0
+基于Tkinter的UI现在可以选择原始文件而非输入路径了。
+换用全角空格，大幅优化了对齐问题。
+这是第一个实用化版本，之后的中版本号将在重大更新发表时更新。
+
+https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.1.0.zip
+
+## Legacy
+### 1.0.0
 基于Tkinter的轻量级UI，用于文本处理。
 
 https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.0.0.zip
@@ -20,3 +31,6 @@ https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.0.0.zip
 pypinyin>=0.39.1
 jieba>=0.42.1
 python>=3.8.0
+
+# License
+MIT License
