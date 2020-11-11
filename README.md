@@ -6,7 +6,7 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 
 基于pypinyin以及jieba等库。
 
-对于某些不熟练而又不得不快速准确读出的东西，例如直播间的superchat等。
+便于阅读某些不熟练而又不得不快速准确读出的东西，例如直播间的superchat等。
 
 同时也是日语母语者学习中文的助力。
 
@@ -16,15 +16,21 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 
 ## 1.2.0
 使用制表符，在大多数情况下解决了可能存在的对齐问题。
+
 增加了实时短句翻译功能。与原本的文档翻译整合在一起。
+
 整理了UI界面。
-现在主程序名为CNfurikana了
+
+现在主程序名为CNfurikana了。
+
 https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.2.0.zip
 
 ## Legacy
 ### 1.1.0
 基于Tkinter的UI现在可以选择原始文件而非输入路径了。
+
 换用全角空格，大幅优化了对齐问题。
+
 这是第一个实用化版本，之后的中版本号将在重大更新发表时更新。
 
 https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.1.0.zip
