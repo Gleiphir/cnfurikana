@@ -13,7 +13,7 @@
 ## 1.0.0
 基于Tkinter的轻量级UI，用于文本处理。
 
-https://github.com/Gleiphir/cnfurikana/blob/main/CNfurikana%20v1.0.0.zip
+https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.0.0.zip
 
 # Dependency
 
