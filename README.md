@@ -1,4 +1,4 @@
-# cnfurikana
+# CNfurikana
 
 轻量级的用假名标注中文音调与读音的库。
 
@@ -6,7 +6,7 @@
 
 同时也是日语母语者学习中文的助力。
 
-# release
+# Release
 
 ## 1.0.0
 基于Tkinter的轻量级UI，用于文本处理。
