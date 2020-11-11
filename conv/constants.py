@@ -48,16 +48,16 @@ class ToneMark(Enum):
 
 #5：轻声
 style_arrows = [
-    "  ",# placeholder
-    r" →",
-    r" ↗",
-    r"↘↗",
-    r" ↘",
-    "·"
+    "\u3000\u3000",# placeholder
+    "\u3000→",
+    "\u3000↗",
+    "↘↗",
+    "\u3000↘",
+    "\u3000·"
 ]
 
 style_ascii = [
-    " ",# placeholder
+    "\u3000",# placeholder
     r"—",
     r"/",
     r"V",

@@ -10,7 +10,7 @@ import os
 class conventer():
     def __init__(self,linewidth):
         self.linewidth = linewidth
-        self.toneSymbols = C.style_ascii#C.style_arrows
+        self.toneSymbols = C.style_arrows
         #TODO:更换注音符号
         with open(os.path.join(os.getcwd(),"conv/table.json"),encoding='utf-8') as f:
             self.trans2kana = json.load(f)
@@ -54,7 +54,7 @@ class conventer():
             for n in (0,1,2):
 
                 print(char, maxlen,(maxlen - len(char[n])))
-                char[n] = ''.join([char[n],' ' *2* (maxlen - len(char[n])) ])
+                char[n] = ''.join([char[n],'\u3000'* (maxlen - len(char[n])) ])
 
                 text[n].append( char[n])
         #TODO:添加对其他注音风格的支持
