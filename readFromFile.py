@@ -44,10 +44,10 @@ def convert():
 
     with open(of_path, "w", encoding="utf-8") as ofp:
         ofp.writelines(res)
-    messagebox.showinfo('', '写入完成')
+    messagebox.showinfo('写入完成', '写入完成\n{}'.format(of_path))
 
 def about():
-    messagebox.showinfo('关于','v1.0.0\nhttps://github.com/Gleiphir\nAll rights reserved\n\nNov 11,2020凌晨\n\n\n请不要为本软件付费\n\n\n辛苦了，绯赤艾莉欧组\n\n时代变了，这也许能帮上忙')
+    messagebox.showinfo('关于','v1.0.0\nhttps://github.com/Gleiphir\nAll rights reserved\n\nNov 11,2020凌晨\n\n\n请不要为本软件付费\n\n\n辛苦了，绯赤艾莉欧组\n时代变了，这也许能帮上忙')
 
 Button(root, text='开始生成', width=10, command=convert) \
  \
