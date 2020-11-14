@@ -13,8 +13,18 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 
 # Release
 ## Latest
+### 1.3.1-qt
+自行完成了界面的日语翻译。
+如有相关建议请随时提出，如有志参与也欢迎联系。
 
-## 1.2.0
+整理了UI界面。
+
+现在主程序改为使用PyQt5构建，为下一个小版本的界面美化打下基础。
+
+https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana-1.3.1-qt.zip
+
+## Legacy
+### 1.2.0
 使用制表符，在大多数情况下解决了可能存在的对齐问题。
 
 增加了实时短句翻译功能。与原本的文档翻译整合在一起。
@@ -25,7 +35,7 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 
 https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.2.0.zip
 
-## Legacy
+
 ### 1.1.0
 基于Tkinter的UI现在可以选择原始文件而非输入路径了。
 
@@ -46,6 +56,7 @@ https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.0.0.zip
 pypinyin>=0.39.1
 jieba>=0.42.1
 python>=3.8.0
+PyQt5 >= 5.15.1
 
 # License
 MIT License
