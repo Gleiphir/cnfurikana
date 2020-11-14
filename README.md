@@ -17,7 +17,7 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 自行完成了界面的日语翻译。
 如有相关建议请随时提出，如有志参与也欢迎联系。
 
-用户可以通过用conv/settings-jp.ini与conv/settings-cn.ini覆盖conv/settings.ini以切换语言。
+请以conv/settings-jp.ini或conv/settings-cn.ini覆盖conv/settings.ini以切换至对应的语言。
 
 整理了UI界面。
 
