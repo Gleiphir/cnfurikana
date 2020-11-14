@@ -1,11 +1,30 @@
+"""
+CNfurikana
+v1.2.0
+
+https://github.com/Gleiphir
+All rights reserved
+
+distributed under MIT license
+
+It's a free software, do NOT pay for this.
+此为自由软件，请不要为此付费。
+これはフリーソフトであるので無料です。
+
+"""
+
+
 
 about_text = """ \
 v1.2.0\n
 https://github.com/Gleiphir\n
 All rights reserved\n
-\nNov 11,2020\n
 \n
-请不要为本软件付费\n
+distributed under MIT license\n
+\n
+It's a free software, do NOT pay for this.\n
+此为自由软件，请不要为此付费。\n
+これはフリーソフトであるので無料です。\n
 \n
 辛苦了，字幕组的各位\n
 时代变了，这也许能帮上忙
