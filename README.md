@@ -23,10 +23,14 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 
 现在主程序改为使用PyQt5构建，为下一个小版本的界面美化打下基础。
 
-https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana-1.3.1-qt.zip
+https://github.com/Gleiphir/cnfurikana/releases/download/v1.3.1/CNfurikana-1.3.1-qt.zip
 
 ## Legacy
+https://github.com/Gleiphir/cnfurikana/releases/download/v1.2.0e/CNfurikana-Legacy.zip
+
 ### 1.2.0
+
+
 使用制表符，在大多数情况下解决了可能存在的对齐问题。
 
 增加了实时短句翻译功能。与原本的文档翻译整合在一起。
@@ -35,7 +39,7 @@ https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana-1.3.1-qt.zip
 
 现在主程序名为CNfurikana了。
 
-https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.2.0.zip
+
 
 
 ### 1.1.0
@@ -45,13 +49,12 @@ https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.2.0.zip
 
 这是第一个实用化版本，之后的中版本号将在重大更新发表时更新。
 
-https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.1.0.zip
+
 
 
 ### 1.0.0
 基于Tkinter的轻量级UI，用于文本处理。
 
-https://github.com/Gleiphir/cnfurikana/raw/main/CNfurikana%20v1.0.0.zip
 
 # Dependency
 
