@@ -32,10 +32,10 @@ It's a free software, do NOT pay for this.\n
 import time
 from conv.constants import config as conf
 
-from PyQt5.QtWidgets import  QApplication,\
+from PyQt5.QtWidgets import QApplication, \
     QWidget, QMainWindow, QMessageBox, \
     QFileDialog, QPushButton, QLabel, \
-    QGridLayout,QLineEdit
+    QGridLayout, QLineEdit, QFrame
 from PyQt5.QtGui import QFont
 import conv.conventer
 import os
@@ -63,8 +63,8 @@ class mainWindow (QMainWindow):
 
         self.maxLineWidth = conf['Intval','LineWidth'] # in char
 
-        self.LoshiraseRT = QLabel(self)
-        self.LoshiraseRT.setText(conf['Text','hintRT'])
+        self.LHintRT = QLabel(self)
+        self.LHintRT.setText(conf['Text', 'hintRT'])
 
         self.LRTIn = QLineEdit(self)
 
@@ -72,8 +72,8 @@ class mainWindow (QMainWindow):
         #self.LRTOut.setMaximumWidth(self.maxLineWidth)
         #self.LRTOut.setWordWrap(True)
 
-        self.LoshiraseF = QLabel(self)
-        self.LoshiraseF.setText(conf['Text','hintFile'])
+        self.LHintFile = QLabel(self)
+        self.LHintFile.setText(conf['Text', 'hintFile'])
 
         self.LFileName = QLabel(self)
 
@@ -90,14 +90,20 @@ class mainWindow (QMainWindow):
         self.aboutBtn = QPushButton(conf['Text','Babout'], self)
         self.aboutBtn.clicked.connect(self.about)
 
+
         self.QuitBtn = QPushButton(conf['Text','Bquit'], self)
         self.QuitBtn.clicked.connect(self.close)
 
-        self.Cwidget = QWidget(self)
+        self.Cwidget = QFrame(self)
 
         self.initUI()
 
     def initUI(self):
+        for key in self.__dict__:
+            if isinstance(self.__dict__[key],QWidget):
+                self.__dict__[key].setObjectName(key)
+                #print(key)
+
 
         self.setCentralWidget(self.Cwidget)
 
@@ -106,22 +112,27 @@ class mainWindow (QMainWindow):
         self.Cwidget.setLayout(grid)
 
 
-        grid.addWidget(self.LoshiraseRT, 0, 0)
+
+        grid.addWidget(self.LHintRT, 0, 0)
         grid.addWidget(self.LRTIn, 1, 0)
         grid.addWidget(self.markBtn, 1, 1)
         grid.addWidget(self.LRTOut, 2, 0)
 
-        grid.addWidget(self.LoshiraseF, 4, 0)
+        grid.addWidget(self.LHintFile, 4, 0)
+        grid.addWidget(self.genFileBtn, 4, 1)
         grid.addWidget(self.LFileName, 5, 0)
 
         grid.addWidget(self.browseBtn, 5, 1)
 
-        grid.addWidget(self.genFileBtn, 4, 1)
-        grid.addWidget(self.aboutBtn, 6, 0)
-        grid.addWidget(self.QuitBtn, 6, 1)
+
+        grid.addWidget(self.aboutBtn, 6, 1)
+        grid.addWidget(self.QuitBtn, 7, 1)
 
         self.setLayout(grid)
         self.setGeometry(300, 300, 350, 300)
+        #print(conf['customFile','stylish'])
+        #self.setStyleSheet('QPushButton{color:red;}')
+        self.setStyleSheet(conf['customFile','stylish'])
 
 
     def convertRT(self):
@@ -132,21 +143,21 @@ class mainWindow (QMainWindow):
         line3 = [''.join(l) for l in res]
         lines = []
         pos = [x for x in range(0, len(line3[1]),self.maxLineWidth)];pos.append(len(line3[1]))
-        print("linewidth",self.maxLineWidth)
+        #print("linewidth",self.maxLineWidth)
         for ind in range(len(pos)-1):
             for i in range(3):
                 lines.append( "".join([ line3[i][ pos[ind]:pos[ind+1] ] ]) + "\n" )
         text = "".join(lines)
-        print(text)
+        #print(text)
         self.LRTOut.setText(text)
 
     def convertFile(self):
         cvr = conv.conventer.conventer(self.maxLineWidth)
         if len(self.file_path) <= 0:
-            QMessageBox.warning(self, "File required", "请输入文档")
+            QMessageBox.warning(self, "File required", conf['TextWarning','fileNotSpecified'])
             return
         if not os.path.exists(self.file_path):
-            QMessageBox.warning(self, "File Not found", "找不到文档")
+            QMessageBox.warning(self, "File Not found", conf['TextWarning','fileNotFound'])#legacy(for safety)
             return
         name, suf = os.path.splitext(os.path.basename(self.file_path))
 

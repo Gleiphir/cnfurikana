@@ -1,0 +1,58 @@
+QMainWindow > .QFrame{
+    background-color:#E6E6FA;
+    /*background-color:#FFF5EE;*/
+    /*background-image: url("resources/bg-sample-scroll.png");*/
+}
+
+QFrame > .QLabel{
+    background-color:#66CDAA;
+    color:black;
+    border-radius:5px;
+}
+
+#LHintRT{
+    /*background-color:#FFF5EE;*/
+
+    border-style: solid;
+}
+
+#LRTOut{
+    border-width: 0px 2px 0px 2px;
+    border-style: solid;
+    border-radius:5px;
+    background-color:#FFC1C1;
+}
+
+#LFileName{
+    border-style: solid;
+    border-radius:5px;
+    background-color:#F0FFF0;
+}
+
+QMainWindow QLineEdit {
+    border: 2px solid gray;
+    border-width: 3px 3px 3px 3px;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: #FFE4E1;
+    selection-background-color: darkgray;
+}
+
+QFrame > QPushButton{
+    background-color:#673ab7;
+    color:#F5F5F5;
+    border:none;
+    border-width: 1px 1px 1px 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius:6px;
+}
+/*QPushButton#QuitBtn{
+    background-color:#673ab7;
+    color:red;
+    border:none;
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-radius:6px;
+}
+*/
