@@ -17,6 +17,8 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 ### 1.4.0-cinderella
 允许利用QSS进行UI自定义化。提供了示例及教程，见https://www.bilibili.com/read/cv8395252
 
+https://github.com/Gleiphir/cnfurikana/releases/download/1.4.0/CNfurikana-1.4.0-cinderella.zip
+
 ## Legacy
 ### 1.3.1-qt
 自行完成了界面的日语翻译。
@@ -31,10 +33,11 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 https://github.com/Gleiphir/cnfurikana/releases/download/v1.3.1/CNfurikana-1.3.1-qt.zip
 
 
+
+
+### 1.2.0-Legacy
+
 https://github.com/Gleiphir/cnfurikana/releases/download/v1.2.0e/CNfurikana-Legacy.zip
-
-### 1.2.0
-
 
 使用制表符，在大多数情况下解决了可能存在的对齐问题。
 
