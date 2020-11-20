@@ -10,9 +10,14 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 
 同时也是日语母语者学习中文的助力。
 
+第三方web版:https://github.com/ZhaoWeicheng98/cnfurikana-web
 
 # Release
 ## Latest
+### 1.4.0-cinderella
+允许利用QSS进行UI自定义化。提供了示例及教程，见https://www.bilibili.com/read/cv8395252
+
+## Legacy
 ### 1.3.1-qt
 自行完成了界面的日语翻译。
 如有相关建议请随时提出，如有志参与也欢迎联系。
@@ -25,7 +30,7 @@ Auto mark Chinese pronunciation by marking furikana on characters.
 
 https://github.com/Gleiphir/cnfurikana/releases/download/v1.3.1/CNfurikana-1.3.1-qt.zip
 
-## Legacy
+
 https://github.com/Gleiphir/cnfurikana/releases/download/v1.2.0e/CNfurikana-Legacy.zip
 
 ### 1.2.0
